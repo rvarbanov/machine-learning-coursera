@@ -28,7 +28,7 @@ p = (lambda/(2*m)) * sum(regTheta' * regTheta);
 
 J = cost + p;
 
-grad = (1/m) * (X' * (X*theta - y) + lambda/m * regTheta);
+grad = ((1/m) .* (X' * (X*theta - y))) + (lambda/m) .* regTheta;
 
 % =========================================================================
 
